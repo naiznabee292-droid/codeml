@@ -1,0 +1,766 @@
+/* ==================================================
+   CODML PROJECTS PAGE
+================================================== */
+
+
+/* ================= HERO ================= */
+
+.projects-hero {
+    position: relative;
+    padding: 170px 0 110px;
+    overflow: hidden;
+    background: #030303;
+}
+
+.projects-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.projects-glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+
+    right: -150px;
+    top: 80px;
+
+    background: rgba(0, 207, 255, 0.12);
+
+    filter: blur(120px);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.projects-hero h1 {
+    max-width: 900px;
+
+    margin: 20px 0;
+
+    font-size: clamp(50px, 8vw, 105px);
+
+    line-height: 0.95;
+
+    letter-spacing: -5px;
+
+    font-weight: 800;
+}
+
+.projects-hero h1 span {
+    color: #00cfff;
+}
+
+.projects-hero p {
+    max-width: 600px;
+
+    margin-top: 30px;
+
+    color: #9a9da5;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= PROJECT SECTION ================= */
+
+.projects-section {
+    padding: 120px 0;
+
+    background: #08090c;
+}
+
+.projects-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: end;
+
+    margin-bottom: 90px;
+}
+
+.projects-heading h2 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 5vw, 65px);
+
+    letter-spacing: -3px;
+}
+
+.projects-heading p {
+    max-width: 500px;
+
+    color: #9a9da5;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* ================= PROJECT LIST ================= */
+
+.projects-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 120px;
+}
+
+
+/* ================= PROJECT CARD ================= */
+
+.project-card {
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.project-card.reverse {
+    grid-template-columns: 0.85fr 1.15fr;
+}
+
+.project-card.reverse .project-preview {
+    order: 2;
+}
+
+.project-card.reverse .project-content {
+    order: 1;
+}
+
+
+/* ================= PREVIEW ================= */
+
+.project-preview {
+    position: relative;
+
+    min-height: 500px;
+
+    padding: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    background: #050608;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.4);
+
+    transition: transform 0.5s ease,
+                border-color 0.5s ease;
+}
+
+.project-preview:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(0,207,255,0.35);
+}
+
+
+/* ================= BROWSER WINDOW ================= */
+
+.preview-window {
+    width: 90%;
+
+    max-width: 620px;
+
+    min-height: 350px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 14px;
+
+    background: #0b0d11;
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.5);
+}
+
+.window-bar {
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 14px;
+
+    background: #111319;
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.window-bar span {
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #555;
+}
+
+
+/* ==================================================
+   ESPORTS PREVIEW
+================================================== */
+
+.esports-preview {
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(0,207,255,0.22),
+            transparent 45%
+        ),
+        #05070a;
+}
+
+.esports-content {
+    padding: 50px;
+
+    min-height: 310px;
+}
+
+.esports-content small {
+    color: #00cfff;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.esports-content h3 {
+    margin: 20px 0;
+
+    font-size: 42px;
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+}
+
+.esports-content h3 strong {
+    color: #00cfff;
+}
+
+.esports-line {
+    width: 80px;
+
+    height: 2px;
+
+    background: #00cfff;
+
+    margin: 25px 0;
+}
+
+.esports-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.esports-grid div {
+    height: 50px;
+
+    background: rgba(0,207,255,0.08);
+
+    border: 1px solid rgba(0,207,255,0.15);
+
+    border-radius: 5px;
+}
+
+
+/* ==================================================
+   E-COMMERCE PREVIEW
+================================================== */
+
+.ecommerce-preview {
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255,255,255,0.08),
+            transparent 40%
+        ),
+        #0d0c0b;
+}
+
+.shop-content {
+    min-height: 310px;
+
+    padding: 35px;
+}
+
+.shop-nav {
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+.shop-main {
+    margin-top: 45px;
+}
+
+.shop-main small {
+    color: #999;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.shop-main h3 {
+    margin: 15px 0 25px;
+
+    font-size: 35px;
+
+    line-height: 0.95;
+}
+
+.shop-main h3 strong {
+    color: #fff;
+}
+
+.shop-main button {
+    border: 1px solid #fff;
+
+    background: transparent;
+
+    color: #fff;
+
+    padding: 10px 18px;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ==================================================
+   PORTFOLIO PREVIEW
+================================================== */
+
+.portfolio-preview {
+    background:
+        radial-gradient(
+            circle at 70% 30%,
+            rgba(0,207,255,0.16),
+            transparent 45%
+        ),
+        #07090c;
+}
+
+.portfolio-content {
+    padding: 45px;
+
+    min-height: 310px;
+}
+
+.portfolio-content small {
+    color: #777;
+
+    letter-spacing: 3px;
+
+    font-size: 10px;
+}
+
+.portfolio-content h3 {
+    margin-top: 25px;
+
+    font-size: 40px;
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+}
+
+.portfolio-content h3 strong {
+    color: #00cfff;
+}
+
+.portfolio-line {
+    width: 60px;
+
+    height: 2px;
+
+    background: #00cfff;
+
+    margin: 25px 0;
+}
+
+.portfolio-content p {
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/* ================= PROJECT CONTENT ================= */
+
+.project-content {
+    padding: 20px 0;
+}
+
+.project-number {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #00cfff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.project-category {
+    display: block;
+
+    color: #777;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.project-content h2 {
+    margin: 18px 0;
+
+    font-size: clamp(32px, 4vw, 52px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.project-content > p {
+    max-width: 500px;
+
+    color: #9a9da5;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* ================= TECHNOLOGIES ================= */
+
+.project-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 30px;
+}
+
+.project-tech span {
+    padding: 8px 12px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 50px;
+
+    color: #aaa;
+
+    font-size: 11px;
+
+    background: rgba(255,255,255,0.02);
+}
+
+
+/* ================= PROJECT LINK ================= */
+
+.project-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease,
+                gap 0.3s ease;
+}
+
+.project-link span {
+    color: #00cfff;
+
+    font-size: 18px;
+}
+
+.project-link:hover {
+    color: #00cfff;
+
+    gap: 18px;
+}
+
+
+/* ================= CTA ================= */
+
+.projects-cta {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 140px 0;
+
+    background: #030303;
+
+    text-align: center;
+}
+
+.projects-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 300px;
+
+    left: 50%;
+
+    top: 40%;
+
+    transform: translate(-50%, -50%);
+
+    background: rgba(0,207,255,0.1);
+
+    filter: blur(120px);
+
+    border-radius: 50%;
+}
+
+.projects-cta .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+.projects-cta h2 {
+    margin: 20px 0;
+
+    font-size: clamp(45px, 7vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+}
+
+.projects-cta p {
+    margin: 25px auto 35px;
+
+    max-width: 500px;
+
+    color: #9a9da5;
+
+    line-height: 1.7;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .project-card,
+    .project-card.reverse {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .project-card.reverse .project-preview,
+    .project-card.reverse .project-content {
+        order: initial;
+    }
+
+    .project-preview {
+        min-height: 430px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .projects-hero {
+        padding: 140px 0 80px;
+    }
+
+    .projects-hero h1 {
+        font-size: clamp(45px, 13vw, 70px);
+
+        letter-spacing: -3px;
+    }
+
+    .projects-hero p {
+        font-size: 15px;
+    }
+
+    .projects-section {
+        padding: 80px 0;
+    }
+
+    .projects-heading {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 60px;
+    }
+
+    .projects-heading h2 {
+        font-size: 42px;
+    }
+
+    .projects-list {
+        gap: 80px;
+    }
+
+    .project-preview {
+        min-height: 350px;
+
+        padding: 15px;
+
+        border-radius: 18px;
+    }
+
+    .preview-window {
+        width: 100%;
+
+        min-height: 290px;
+    }
+
+    .esports-content,
+    .shop-content,
+    .portfolio-content {
+        padding: 30px;
+
+        min-height: 250px;
+    }
+
+    .esports-content h3,
+    .portfolio-content h3 {
+        font-size: 32px;
+    }
+
+    .shop-main h3 {
+        font-size: 28px;
+    }
+
+    .project-content h2 {
+        font-size: 36px;
+    }
+
+    .projects-cta {
+        padding: 100px 0;
+    }
+
+    .projects-cta h2 {
+        letter-spacing: -3px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .projects-hero {
+        padding-top: 120px;
+    }
+
+    .projects-hero h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+    .projects-heading h2 {
+        font-size: 35px;
+    }
+
+    .project-preview {
+        min-height: 300px;
+    }
+
+    .preview-window {
+        min-height: 245px;
+    }
+
+    .esports-content,
+    .shop-content,
+    .portfolio-content {
+        padding: 25px;
+
+        min-height: 205px;
+    }
+
+    .esports-content h3,
+    .portfolio-content h3 {
+        font-size: 26px;
+    }
+
+    .shop-main {
+        margin-top: 30px;
+    }
+
+    .shop-main h3 {
+        font-size: 24px;
+    }
+
+    .project-content h2 {
+        font-size: 31px;
+    }
+
+    .project-content > p {
+        font-size: 14px;
+    }
+
+    .projects-cta h2 {
+        font-size: 43px;
+    }
+
+}
